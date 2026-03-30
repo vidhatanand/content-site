@@ -72,7 +72,7 @@ Large language models are trained on vast text corpora. They learn statistical p
 
 This has two key implications for marketers:
 
-**1. Input quality determines output quality.** Vague prompts produce generic content. Specific prompts — with target audience, tone, desired structure, keyword targets, and examples — produce drafts that need minimal editing. Prompt engineering is a real skill, and it's worth investing in. ([We've covered prompt engineering for marketing copy in depth here.](/blog/prompt-engineering-for-marketing-copy))
+**1. Input quality determines output quality.** Vague prompts produce generic content. Specific prompts — with target audience, tone, desired structure, keyword targets, and examples — produce drafts that need minimal editing. Prompt engineering is a real skill, and it's worth investing in. ([We've covered prompt engineering for marketing copy in depth here.](/blog/prompt-engineering-marketing-copy))
 
 **2. Models hallucinate.** AI will confidently state things that are factually wrong — invented statistics, plausible-sounding citations that don't exist, outdated information. Every AI-generated draft requires human fact-checking before publication. This is non-negotiable.
 
@@ -117,7 +117,7 @@ With a detailed brief and outline, AI can produce a first draft in 2–5 minutes
 - **Structure**: Explicitly tell the AI to follow the outline structure
 - **Examples**: Include 2–3 sentences of example content in your brand voice
 
-For long-form content (3,000+ words), [break the article into sections and generate each separately](/blog/ai-for-long-form-content-creation) — single prompts for very long pieces tend to degrade in quality toward the end.
+For long-form content (3,000+ words), [break the article into sections and generate each separately](/blog/ai-long-form-content-creation) — single prompts for very long pieces tend to degrade in quality toward the end.
 
 ### Phase 4: Human Editing
 
@@ -162,19 +162,19 @@ Tools like Surfer SEO, MarketMuse, and Clearscope integrate keyword data directl
 
 ### For brand voice consistency
 
-[Training AI on your brand voice](/blog/how-to-train-ai-on-brand-voice) is one of the highest-leverage things a content team can do. Tools like Writer have native brand kit features. For general-purpose LLMs, you can approximate this by building detailed system prompts with style rules, example paragraphs, vocabulary lists, and prohibited phrases.
+[Training AI on your brand voice](/blog/train-ai-brand-voice) is one of the highest-leverage things a content team can do. Tools like Writer have native brand kit features. For general-purpose LLMs, you can approximate this by building detailed system prompts with style rules, example paragraphs, vocabulary lists, and prohibited phrases.
 
 ### For SaaS and B2B content
 
-The [best AI content generators for SaaS companies](/blog/best-ai-content-generators-for-saas) have evolved significantly — context windows are large enough to ingest product documentation, customer case studies, and persona briefs before generating. This dramatically improves relevance and reduces hallucination risk on technical claims.
+The [best AI content generators for SaaS companies](/blog/best-ai-content-generators-saas) have evolved significantly — context windows are large enough to ingest product documentation, customer case studies, and persona briefs before generating. This dramatically improves relevance and reduces hallucination risk on technical claims.
 
 ### For email and nurture sequences
 
-AI excels at high-volume, structured content. [AI-generated email sequences](/blog/ai-content-for-email-sequences) work well when you have a clear persona, defined sequence logic, and strong calls to action. Expect to invest in prompt templates and QA workflows, but the throughput gains are real.
+AI excels at high-volume, structured content. [AI-generated email sequences](/blog/ai-content-email-sequences) work well when you have a clear persona, defined sequence logic, and strong calls to action. Expect to invest in prompt templates and QA workflows, but the throughput gains are real.
 
 ### For e-commerce at scale
 
-[AI product descriptions for e-commerce](/blog/ai-product-descriptions-for-ecommerce) is one of the clearest ROI use cases — structured input (product attributes), consistent output format, massive volume. Teams scaling to 10,000+ SKUs have reduced description production time by 80–90%.
+[AI product descriptions for e-commerce](/blog/ai-product-descriptions-ecommerce) is one of the clearest ROI use cases — structured input (product attributes), consistent output format, massive volume. Teams scaling to 10,000+ SKUs have reduced description production time by 80–90%.
 
 ---
 
@@ -198,7 +198,7 @@ The practical implication: use AI for informational, cluster-building content. I
 
 This is the question every marketing team asks before committing to an AI content strategy. The short answer: yes, with significant caveats.
 
-[Research into whether AI SEO content ranks](/blog/ai-seo-content-does-it-rank) shows that AI-generated content can rank and drive organic traffic — but performance correlates strongly with editing quality, topical depth, and the overall authority of the domain. Thin, unedited AI content regularly gets filtered out in Google's helpful content assessments.
+[Research into whether AI SEO content ranks](/blog/ai-seo-content-rank) shows that AI-generated content can rank and drive organic traffic — but performance correlates strongly with editing quality, topical depth, and the overall authority of the domain. Thin, unedited AI content regularly gets filtered out in Google's helpful content assessments.
 
 The teams winning with AI content are not publishing raw AI output. They're using AI for velocity while maintaining strong editorial standards.
 
@@ -235,7 +235,7 @@ Teams that build repurposing workflows early get dramatically more reach from ev
 
 ### Scaling your content team structure
 
-[Scaling a content team with AI](/blog/scaling-a-content-team-with-ai) requires rethinking roles. The traditional writer-heavy model shifts toward a leaner structure: fewer writers, a strong editor, a strategist who owns the content plan, and a systems thinker who maintains AI workflows and quality standards. Some teams add a dedicated prompt engineer. The org chart changes; the work output multiplies.
+[Scaling a content team with AI](/blog/scale-content-team-with-ai) requires rethinking roles. The traditional writer-heavy model shifts toward a leaner structure: fewer writers, a strong editor, a strategist who owns the content plan, and a systems thinker who maintains AI workflows and quality standards. Some teams add a dedicated prompt engineer. The org chart changes; the work output multiplies.
 
 ---
 
@@ -315,7 +315,7 @@ Marketing leaders need to justify the investment. Here's how to measure it:
 - Product page referrals from content cluster
 - Trial or demo conversions attributed to organic content
 
-[Our AI content ROI calculator](/blog/ai-content-generation-roi-calculator) walks through a full financial model for content programs of different sizes — including breakeven analysis and realistic traffic projections by cluster size.
+[Our AI content ROI calculator](/blog/ai-content-roi-calculator) walks through a full financial model for content programs of different sizes — including breakeven analysis and realistic traffic projections by cluster size.
 
 ---
 
@@ -333,7 +333,7 @@ Key considerations when evaluating tools:
 
 **Model transparency**: Know which underlying model you're using. A branded "AI writing tool" may be a thin wrapper on GPT-4 or Claude. Understanding the model helps you calibrate expectations and prompts.
 
-[AI vs. template-based content tools](/blog/ai-vs-template-based-content-tools) is a related question worth thinking through: template-based tools (like older versions of Jasper) offer structure and predictability at the cost of flexibility and output quality. Modern LLM-based tools flip that tradeoff. For most marketing teams in 2026, templates are a step backward.
+[AI vs. template-based content tools](/blog/ai-vs-template-content-tools) is a related question worth thinking through: template-based tools (like older versions of Jasper) offer structure and predictability at the cost of flexibility and output quality. Modern LLM-based tools flip that tradeoff. For most marketing teams in 2026, templates are a step backward.
 
 ---
 
@@ -396,19 +396,19 @@ This is the hub for our full cluster on AI content creation and automation. As e
 - [How to Use AI for Blog Content: A Step-by-Step Guide](/blog/how-to-use-ai-for-blog-content)
 - [AI Content at Scale: Risks, Pitfalls, and Best Practices](/blog/ai-content-at-scale-risks)
 - [7 Content Automation Workflow Examples You Can Steal](/blog/content-automation-workflow-examples)
-- [Prompt Engineering for Marketing Copy: 20+ Proven Templates](/blog/prompt-engineering-for-marketing-copy)
-- [AI for Long-Form Content: How to Write In-Depth Articles with AI](/blog/ai-for-long-form-content-creation)
-- [How to Train AI on Your Brand Voice (Step-by-Step)](/blog/how-to-train-ai-on-brand-voice)
+- [Prompt Engineering for Marketing Copy: 20+ Proven Templates](/blog/prompt-engineering-marketing-copy)
+- [AI for Long-Form Content: How to Write In-Depth Articles with AI](/blog/ai-long-form-content-creation)
+- [How to Train AI on Your Brand Voice (Step-by-Step)](/blog/train-ai-brand-voice)
 - [AI Content Quality vs Human Writers: What the Data Says in 2026](/blog/ai-content-quality-vs-human-writers)
-- [Does AI SEO Content Actually Rank? A 2026 Study](/blog/ai-seo-content-does-it-rank)
+- [Does AI SEO Content Actually Rank? A 2026 Study](/blog/ai-seo-content-rank)
 - [AI Newsletter Generation: Complete Guide with Examples](/blog/ai-newsletter-generation)
-- [Best AI Content Generators for SaaS Companies in 2026](/blog/best-ai-content-generators-for-saas)
+- [Best AI Content Generators for SaaS Companies in 2026](/blog/best-ai-content-generators-saas)
 - [Content Repurposing with AI: Turn 1 Article into 10 Assets](/blog/content-repurposing-with-ai)
-- [How to Scale Your Content Team with AI (Without Sacrificing Quality)](/blog/scaling-a-content-team-with-ai)
-- [AI vs Template-Based Content Tools: Which Is Right for You?](/blog/ai-vs-template-based-content-tools)
-- [AI Content for Email Sequences: Full Playbook + Examples](/blog/ai-content-for-email-sequences)
-- [AI Product Descriptions for E-commerce: Scale to 10,000 SKUs](/blog/ai-product-descriptions-for-ecommerce)
-- [AI Content ROI Calculator: What Should AI Content Cost You?](/blog/ai-content-generation-roi-calculator)
+- [How to Scale Your Content Team with AI (Without Sacrificing Quality)](/blog/scale-content-team-with-ai)
+- [AI vs Template-Based Content Tools: Which Is Right for You?](/blog/ai-vs-template-content-tools)
+- [AI Content for Email Sequences: Full Playbook + Examples](/blog/ai-content-email-sequences)
+- [AI Product Descriptions for E-commerce: Scale to 10,000 SKUs](/blog/ai-product-descriptions-ecommerce)
+- [AI Content ROI Calculator: What Should AI Content Cost You?](/blog/ai-content-roi-calculator)
 - [Best AI Writing Tools Compared: 2026 Deep-Dive (With Scores)](/blog/ai-writing-tools-comparison)
 
 ---

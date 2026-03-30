@@ -158,4 +158,4 @@ Teams that resist AI adoption are being outpublished by 3–5x. Teams that fully
 
 The winning position is a well-designed hybrid: AI handles synthesis, structure, and scale. Humans handle strategy, original insight, brand voice calibration, and accuracy. The result outperforms either approach alone — on quality, volume, and cost.
 
-For teams looking to scale AI content while maintaining quality, see our companion piece on the [ROI and scaling considerations for AI content programs](/blog/best-ai-content-generators-for-saas) and our guide to [writing in-depth long-form content with AI](/blog/ai-long-form-content-creation).
+For teams looking to scale AI content while maintaining quality, see our companion piece on the [ROI and scaling considerations for AI content programs](/blog/best-ai-content-generators-saas) and our guide to [writing in-depth long-form content with AI](/blog/ai-long-form-content-creation).

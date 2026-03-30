@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+
+const clusters = [
+  { slug: 'ai-content-creation', label: 'AI Content Creation', volume: '85k/mo' },
+  { slug: 'topical-authority-seo', label: 'Topical Authority SEO', volume: '52k/mo' },
+  { slug: 'b2b-saas-content', label: 'B2B SaaS Content', volume: '61k/mo' },
+  { slug: 'seo-content-production', label: 'SEO Content Production', volume: '44k/mo' },
+  { slug: 'thought-leadership', label: 'Thought Leadership', volume: '36k/mo' },
+];
+---
+
+<BaseLayout
+  title="ContentSite — Expert content on AI, SEO, and B2B growth"
+  description="Practical guides and deep dives on AI content creation, topical authority SEO, B2B SaaS content, and thought leadership."
+>
+  <section class="hero">
+    <h1>Build content that ranks and converts</h1>
+    <p>Practical insights on AI content, topical authority SEO, and B2B growth — published weekly.</p>
+  </section>
+
+  <section class="clusters">
+    <h2>Browse by topic</h2>
+    <div class="cluster-grid">
+      {clusters.map((c) => (
+        <a href={`/${c.slug}/`} class="cluster-card">
+          <span class="label">{c.label}</span>
+          <span class="volume">{c.volume} search volume</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {posts.length > 0 && (
+    <section class="recent-posts">
+      <h2>Latest articles</h2>
+      {posts.map((post) => <PostCard post={post} />)}
+      <a href="/blog/" class="view-all">View all articles →</a>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 4rem 0 3rem;
+    max-width: 640px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  .clusters, .recent-posts {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.25rem;
+  }
+
+  .cluster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .cluster-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    transition: border-color 0.15s;
+  }
+
+  .cluster-card:hover {
+    border-color: #2563eb;
+  }
+
+  .label {
+    font-weight: 600;
+    color: #111827;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+
+  .volume {
+    font-size: 0.75rem;
+    color: #9ca3af;
+  }
+
+  .view-all {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+</style>

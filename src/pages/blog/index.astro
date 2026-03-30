@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="Blog — ContentSite"
+  description="All articles on AI content creation, topical authority SEO, B2B SaaS content, and thought leadership."
+>
+  <div class="blog-header">
+    <h1>All articles</h1>
+    <p>{posts.length} article{posts.length !== 1 ? 's' : ''}</p>
+  </div>
+
+  {posts.length === 0 ? (
+    <p class="empty">No articles yet. Check back soon.</p>
+  ) : (
+    <div class="posts">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  )}
+</BaseLayout>
+
+<style>
+  .blog-header {
+    padding: 2rem 0 1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111827;
+  }
+
+  .blog-header p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+
+  .empty {
+    color: #6b7280;
+    padding: 2rem 0;
+  }
+</style>

@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const clusters = [
+    'ai-content-creation',
+    'topical-authority-seo',
+    'b2b-saas-content',
+    'seo-content-production',
+    'thought-leadership',
+  ];
+
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+
+  return clusters.map((cluster) => ({
+    params: { cluster },
+    props: {
+      posts: allPosts
+        .filter((p) => p.data.cluster === cluster)
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+    },
+  }));
+}
+
+const { cluster } = Astro.params;
+const { posts } = Astro.props;
+const clusterLabel = cluster.replace(/-/g, ' ');
+---
+
+<BaseLayout
+  title={`${clusterLabel} — ContentSite`}
+  description={`All articles about ${clusterLabel}. Practical guides and expert analysis.`}
+>
+  <div class="cluster-header">
+    <a href="/" class="back">← Home</a>
+    <h1>{clusterLabel}</h1>
+    <p>{posts.length} article{posts.length !== 1 ? 's' : ''}</p>
+  </div>
+
+  {posts.length === 0 ? (
+    <p class="empty">No articles yet in this topic. Check back soon.</p>
+  ) : (
+    <div class="posts">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  )}
+</BaseLayout>
+
+<style>
+  .cluster-header {
+    padding: 2rem 0 1rem;
+  }
+
+  .back {
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111827;
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+  }
+
+  .cluster-header p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+
+  .empty {
+    color: #6b7280;
+    padding: 2rem 0;
+  }
+</style>

@@ -1,6 +1,6 @@
 ---
 title: "The Complete Guide to AI Content Generation for Marketing Teams"
-description: "A comprehensive guide to AI content generation for marketing teams — covering tools, workflows, quality control, scaling strategies, and what actually works in 2026."
+description: "A comprehensive guide to AI content generation for marketing teams — tools, workflows, quality control, and scaling strategies for 2026."
 pubDate: 2026-03-30
 author: "team"
 cluster: "ai-content-creation"

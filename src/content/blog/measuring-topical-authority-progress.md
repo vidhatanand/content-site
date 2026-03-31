@@ -232,6 +232,8 @@ The 6 metrics produce actionable insights when read together:
 **Scenario 4: Metrics growing but keywords not crossing page-1**
 → Competitive threshold issue. Your cluster authority is building but not yet strong enough to outrank established competitors on Tier 2 and Tier 3 keywords. Continue — this is normal at weeks 4–6.
 
+For data on whether AI-generated content in topical authority clusters actually produces the ranking signals these metrics are designed to track, see [Does AI SEO Content Actually Rank?](/blog/ai-seo-content-rank) — with real GSC data from clusters using AI-assisted workflows.
+
 ---
 
 ## The Platform Advantage

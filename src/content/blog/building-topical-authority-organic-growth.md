@@ -94,7 +94,7 @@ Here's what EEAT actually requires in practice:
 
 The intersection with topical authority: a cluster of 15 articles all demonstrating first-person experience and domain expertise sends a compounded EEAT signal. Each article reinforces the others. Google's systems evaluate the site holistically — not just each individual page.
 
-For more on this, see our guide on [EEAT and Topical Authority: What Google Actually Rewards in 2026](/blog/eeat-and-topical-authority).
+For more on this, see our guide on [EEAT and Topical Authority: What Google Actually Rewards in 2026](/blog/eeat-topical-authority).
 
 ---
 
@@ -114,7 +114,7 @@ In practice, this means:
 
 The practical output: when you're building your cluster, map the conceptual territory you need to cover. What entities are associated with your topic? What questions does Google expect an expert to be able to answer? What concepts does your target reader need to understand before the primary concept makes sense?
 
-See also: [Semantic SEO and Entity-Based Optimization: The Hidden Layer of Topical Authority](/blog/semantic-seo-entity-based-optimization).
+See also: [Semantic SEO and Entity-Based Optimization: The Hidden Layer of Topical Authority](/blog/semantic-seo-entity-optimization).
 
 ---
 
@@ -316,9 +316,9 @@ For the full measurement framework, see [Measuring Topical Authority Progress: T
 Everything on this page points to a deeper treatment in a supporting article. Here's the full library, in publishing order:
 
 **Foundational (Week 2)**
-- [EEAT and Topical Authority: What Google Actually Rewards in 2026](/blog/eeat-and-topical-authority)
+- [EEAT and Topical Authority: What Google Actually Rewards in 2026](/blog/eeat-topical-authority)
 - [Content Siloing for SEO: How to Organize Your Site for Topical Authority](/blog/content-siloing-seo)
-- [The Pillar Page and Content Cluster Model Explained (With Examples)](/blog/pillar-page-content-cluster-model)
+- [The Pillar Page and Content Cluster Model Explained (With Examples)](/blog/pillar-page-cluster-model)
 
 **Expanding the Foundation (Week 3)**
 - [What Is Topical Authority in SEO? (And Why It Matters More Than DA)](/blog/what-is-topical-authority-seo)
@@ -328,15 +328,15 @@ Everything on this page points to a deeper treatment in a supporting article. He
 **Analysis & Technical Depth (Week 4)**
 - [How Google Actually Evaluates Topical Expertise (And What Triggers It)](/blog/how-google-evaluates-topical-expertise)
 - [Topical Authority vs Domain Authority: Which Actually Drives Rankings?](/blog/topical-authority-vs-domain-authority)
-- [Semantic SEO and Entity-Based Optimization: The Hidden Layer of Topical Authority](/blog/semantic-seo-entity-based-optimization)
+- [Semantic SEO and Entity-Based Optimization: The Hidden Layer of Topical Authority](/blog/semantic-seo-entity-optimization)
 
 **Practical & Case Studies (Week 5)**
 - [Content Cluster Strategy Examples: 5 Real-World Campaigns Dissected](/blog/content-cluster-strategy-examples)
 - [Topical Authority Case Studies: What Actually Worked (And What Didn't)](/blog/topical-authority-case-studies)
-- [How to Build Topical Authority Fast: A 6-Week Sprint Framework](/blog/how-to-build-topical-authority-fast)
+- [How to Build Topical Authority Fast: A 6-Week Sprint Framework](/blog/build-topical-authority-fast)
 
 **Commercial & Measurement (Week 6)**
-- [Keyword Clustering Tools Compared: Which Is Best for Building Topical Authority?](/blog/keyword-clustering-tools-comparison)
+- [Keyword Clustering Tools Compared: Which Is Best for Building Topical Authority?](/blog/keyword-clustering-tools-compared)
 - [Measuring Topical Authority Progress: The 6 Metrics That Actually Matter](/blog/measuring-topical-authority-progress)
 - [Topical Authority Audit Checklist: 40 Questions to Diagnose Your SEO Coverage](/blog/topical-authority-audit-checklist)
 
